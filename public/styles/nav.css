@@ -17,3 +17,8 @@
     float: left;
     vertical-align: center;
 }
+
+#nav-bar .logo {
+    float:left;
+}
+

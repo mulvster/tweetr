@@ -11,10 +11,15 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    font-family: 'Roboto Condensed', sans-serif;
+.container {
+    margin: 0 auto;
+    padding-top: 60px;
+    width: 450px;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 140px;
+    height: 1150px;
 }
-
 /*
  * Global layout stuff
  */
@@ -23,7 +28,47 @@ body {
     margin: 0;
     color: #244751;
     background-color: #eee;
+    font-family: 'Roboto Condensed', sans-serif;
 }
+
+.new-tweet {
+    border-radius: 10px;
+    background-color: #e8e8e8;
+    padding: 5px;
+    margin: 2em;
+    height: 160px;
+
+}
+.new-tweet h2 {
+    border-bottom: thin solid black;
+    text-align: left;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px -10px 0px;
+}
+
+.new-tweet form {
+    overflow: auto;
+}
+
+.new-tweet textarea {
+    padding: 0.5em;
+    background-color: #ffffff;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+}
+.new-tweet form input {
+    float: left;
+    height: 30px;
+    margin: 15px;
+}
+
+.new-tweet .counter {
+    float: right;
+    font-size: 12px;
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
