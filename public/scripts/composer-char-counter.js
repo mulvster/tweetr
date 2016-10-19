@@ -1,17 +1,24 @@
 $(function () {
-    const maxCharacters = 140;
+  const limitOfCharacters = 140;
+  const warningForCharacterLimit = 'red';
 
-    $('#tweetingButton').text(maxCharacters);
+  function countDown() {
 
-    $('.counter').bind('keyup keydown', function() {
-      var count = $('#tweetingButton');
-      var characters = $(this).val().length;
+    let amountRemaining = limitOfCharacters - $('.charCountMessage').val().length;
+    if (amountRemaining < 0) {
+      $('#tweetingButton').prop('disabled', true);
+      $('.counter').css('color', warningForCharacterLimit);
 
-      if (characters > maxCharacters) {
-        count.addClass('over');
-      } else {
-        count.removeClass('over');
-      }
+    } else {
+      $('#tweetingButton').prop('disabled', false);
+      $('.counter').css('color', 'black');
     }
-    count.text(maxCharacters - characters);
-  });
+    $('.counter').text(amountRemaining);
+  }
+
+  countDown();
+
+  $('.charCountMessage').change(countDown);
+  $('.charCountMessage').keyup(countDown);
+});
+
