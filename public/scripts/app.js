@@ -67,7 +67,6 @@ function createTweetElement(tweet) {
       </header> \
       <section>' + tweetContent + '</section> \
       <footer> \
-        <span>30 seconds ago</span> \
         <div class="tweet-imgs"> \
           <img class="heart" src="/images/icon-like.png"> \
           <img class="retweet" src="/images/icon-retweet.png"> \
