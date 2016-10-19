@@ -54,28 +54,28 @@ function renderTweets(tweets) {
 }
 
 function createTweetElement(tweet) {
-  var fullName = tweet.user.name;
-  var handle = tweet.user.handle;
-  var tweetContent = tweet.content.text;
-  var avatarSrc = tweet.user.avatars.small;
+  const fullName = tweet.user.name;
+  const handle = tweet.user.handle;
+  const tweetContent = tweet.content.text;
+  const avatarSrc = tweet.user.avatars.small;
 
-  var article = '<article class="tweet"> \
-      <header> \
-        <img src="' + avatarSrc + '"/> \
-        <h2>' + fullName + '</h2> \
-        <h3>' + handle + '</h3> \
-      </header> \
-      <section>' + tweetContent + '</section> \
-      <footer> \
-        <div class="tweet-imgs"> \
-          <img class="heart" src="/images/icon-like.png"> \
-          <img class="retweet" src="/images/icon-retweet.png"> \
-          <img class="flag" src="/images/icon-flag.png"> \
-        </div> \
-      </footer> \
-    </article>'; //not conventional to use because it is harder to find errors in the code.
+  var $tweet = $('<article>').addClass('tweet').html(
+      `<header>
+        <img src="${avatarSrc}"/> 
+        <h2>${fullName}</h2> 
+        <h3>${handle}</h3> 
+      </header> 
+      <section>${tweetContent}</section> 
+      <footer> 
+        <div class="tweet-imgs"> 
+          <img class="heart" src="/images/icon-like.png"> 
+          <img class="retweet" src="/images/icon-retweet.png"> 
+          <img class="flag" src="/images/icon-flag.png"> 
+        </div> 
+      </footer> 
+    </article>`);
 
-  return article;
+  return $tweet;
 }
 renderTweets(data);
 });
