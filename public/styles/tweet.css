@@ -7,6 +7,7 @@
 
 .tweet header {
     background-color: #e8e8e8;
+    border-radius: 10px;
 }
 
 .tweet header * {
@@ -41,6 +42,7 @@
     overflow: auto;
     padding: 10px;
     background-color: #e8e8e8;
+    border-radius: 10px;
 }
 
 .tweet footer .tweet-imgs {
