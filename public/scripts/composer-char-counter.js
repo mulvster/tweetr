@@ -4,7 +4,7 @@ $(function () {
 
   function countDown() {
 
-    let amountRemaining = limitOfCharacters - $('.this').val().length;
+    let amountRemaining = limitOfCharacters - $('.charCountMessage').val().length;
     if (amountRemaining < 0) {
       $('#tweetingButton').prop('disabled', true);
       $('.counter').css('color', warningForCharacterLimit);
@@ -21,4 +21,3 @@ $(function () {
   $('.charCountMessage').change(countDown);
   $('.charCountMessage').keyup(countDown);
 });
-

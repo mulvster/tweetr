@@ -52,5 +52,9 @@
 .tweet footer .tweet-imgs img {
     width: 40px;
     height: auto;
+    opacity: 0;
+}
 
+.tweet footer .tweet-imgs img:hover {
+    opacity: 1;
 }
