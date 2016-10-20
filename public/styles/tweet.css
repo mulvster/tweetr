@@ -9,7 +9,7 @@
     background-color: #e8e8e8;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 75px;
+    height: 70px;   
 }
 
 .tweet header * {
@@ -20,19 +20,24 @@
     border-radius: 10px;
     height: 64px;
     width: auto;
-    margin: 0.5em;
+    margin: 0.20em;
+    padding: 5px;
 }
 
 .tweet header h2 {
     display: inline-block;
-    vertical-align: 170%;
+    vertical-align: 180%;
     margin: 0;
+    font-size: 1.2em;
+
 }
 
 .tweet header h3 {
     display: inline-block;
     float: right;
     margin: 0;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 .tweet section {
     min-height: 80px;
