@@ -4,13 +4,13 @@ $(function () {
 
   function countDown() {
 
-    let amountRemaining = limitOfCharacters - $('.charCountMessage  ').val().length;
+    let amountRemaining = limitOfCharacters - $('.charCountMessage').val().length;
     if (amountRemaining < 0) {
       $('#tweetingButton').prop('disabled', true);
       $('.counter').css('color', warningForCharacterLimit);
 
     }
-    if(amountRemaining === 140) {
+    else if(amountRemaining <= 140) {
       $('#tweetingButton').prop('disabled', true);
     } else {
       $('#tweetingButton').prop('disabled', false);
@@ -21,5 +21,5 @@ $(function () {
 
   countDown();
 
-  $(this).bind("input", countDown);
+  $(this).bind("change keyup", countDown);
 })
