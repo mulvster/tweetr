@@ -22,3 +22,16 @@
     float:left;
 }
 
+/*TOGGLE BUTTON IN THE NAV BAR*/
+#composetweetbutton {
+    font-size: 15px;
+    text-align: center;
+    float: right;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #e8fdff;
+    width: 80px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
