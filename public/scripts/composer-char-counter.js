@@ -10,7 +10,7 @@ $(function () {
       $('.counter').css('color', warningForCharacterLimit);
 
     }
-    if(amountRemaining === 140) {
+    else if(amountRemaining === 140) {
       $('#tweetingButton').prop('disabled', true);
     }
     else {
@@ -22,5 +22,5 @@ $(function () {
 
   countDown();
 
-  $(this).bind("change keyup", countDown);
+  $(this).bind("keyup keydown", countDown);
 })
