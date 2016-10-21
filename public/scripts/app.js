@@ -1,5 +1,5 @@
 $(function () {
-
+  //
   function renderTweet(tweet) {
     $('#tweet-container').prepend(createTweetElement(tweet));
   }
@@ -7,7 +7,7 @@ $(function () {
   function renderTweets(tweets) {
     tweets.forEach(function (tweet) {
       var article = createTweetElement(tweet.tweet);
-      $('#tweet-container').append(article);
+      $('#tweet-container').prepend(article);
     });
   }
 
