@@ -10,9 +10,10 @@ $(function () {
       $('.counter').css('color', warningForCharacterLimit);
 
     }
-    else if(amountRemaining <= 140) {
+    if(amountRemaining === 140) {
       $('#tweetingButton').prop('disabled', true);
-    } else {
+    }
+    else {
       $('#tweetingButton').prop('disabled', false);
       $('.counter').css('color', 'black');
     }

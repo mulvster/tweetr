@@ -1,35 +1,35 @@
 "use strict";
 
-const User    = require("../lib/user-helper")
+const User = require("../lib/user-helper")
 const express = require('express');
-const tweets  = express.Router();
+const tweets = express.Router();
 
-module.exports = function(db) {
+module.exports = function (db) {
 
-  tweets.get("/", function(req, res) {
-    let tweets = db.getTweets();
-    // simulate delay
-    setTimeout(() => {
+  tweets.get("/", function (req, res) {
+    let tweets = db.getTweets(function (tweets) {
       return res.json(tweets);
-    }, 300);
+    });
+
   });
 
-  tweets.post("/", function(req, res) {
+  tweets.post("/", function (req, res) {
     if (!req.body.text) {
       res.status(400);
       return res.send("{'error': 'invalid request'}\n");
     }
 
-    const user = req.body.user ? req.body.user : User.generateRandomUser();
-    const tweet = {
+    let user = req.body.user ? req.body.user : User.generateRandomUser();
+    let tweet = {
       user: user,
       content: {
         text: req.body.text
       },
       created_at: Date.now()
     };
-    db.saveTweet(tweet);
-    return res.send(tweet);
+    db.saveTweet(tweet, () => {
+      return res.json(tweet);
+    });
   });
 
   return tweets;
