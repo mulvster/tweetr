@@ -6,7 +6,7 @@ $(function () {
 
   function renderTweets(tweets) {
     tweets.forEach(function (tweet) {
-      var article = createTweetElement(tweet);
+      var article = createTweetElement(tweet.tweet);
       $('#tweet-container').append(article);
     });
   }
@@ -32,6 +32,7 @@ $(function () {
           <img class="retweet" src="/images/icon-retweet.png"> 
           <img class="flag" src="/images/icon-flag.png"> 
         </div> 
+        <div style="clear:both"></div>
       </footer> 
     </article>`);
 

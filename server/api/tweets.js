@@ -7,7 +7,7 @@ const tweets = express.Router();
 module.exports = function (db) {
 
   tweets.get("/", function (req, res) {
-    let tweets = db.getTweets(function (tweets) {
+    db.getTweets(function (tweets) {
       return res.json(tweets);
     });
 
