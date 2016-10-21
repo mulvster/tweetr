@@ -37,6 +37,7 @@ body {
     padding: 5px;
     margin: 2em;
     height: 160px;
+    overflow: auto;
 
 }
 .new-tweet h2 {
@@ -69,6 +70,13 @@ body {
     font-size: 12px;
 }
 
+.new-tweet .submitError {
+    padding: 0px 20px;
+    display: none;
+    color: red;
+    line-height: 1;
+    vertical-align: -110%;
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

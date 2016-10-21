@@ -8,19 +8,20 @@ $(function () {
     if (amountRemaining < 0) {
       $('#tweetingButton').prop('disabled', true);
       $('.counter').css('color', warningForCharacterLimit);
-
+      $('.submitError').fadeIn();
     }
-    else if(amountRemaining === 140) {
+      else if(amountRemaining === 140) {
       $('#tweetingButton').prop('disabled', true);
     }
     else {
       $('#tweetingButton').prop('disabled', false);
       $('.counter').css('color', 'black');
+      $('.submitError').fadeOut();
     }
     $('.counter').text(amountRemaining);
   }
 
   countDown();
 
-  $(this).bind("keyup keydown", countDown);
+  $(this).bind("input", countDown);
 })
