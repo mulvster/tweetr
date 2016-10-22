@@ -139,10 +139,8 @@ body {
     height: 30px; }
     .tweet footer .tweet-imgs {
       float: right;
-      clear: both; }
-      .tweet footer .tweet-imgs img {
-        width: 20px;
-        height: 20px;
-        opacity: 0; }
-        .tweet footer .tweet-imgs img:hover {
+      clear: both;
+      opacity: 0; }
+      
+        .tweet footer .tweet-imgs:hover {
           opacity: 1; }

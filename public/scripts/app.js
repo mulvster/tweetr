@@ -28,9 +28,9 @@ $(function () {
       <footer> 
         ${createdAt}
         <div class="tweet-imgs"> 
-          <img class="heart" src="/images/icon-like.png"> 
-          <img class="retweet" src="/images/icon-retweet.png"> 
-          <img class="flag" src="/images/icon-flag.png"> 
+         <i class="fa fa-heart"></i>
+          <i class="fa fa-refresh"></i>
+          <i class="fa fa-flag"></i>
         </div> 
         <div style="clear:both"></div>
       </footer> 
