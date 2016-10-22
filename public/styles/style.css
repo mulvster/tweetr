@@ -1,2 +1,164 @@
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  background-color: #00a087;
+  color: #e8fdff;
+  padding: 0 2em; }
+
+#nav-bar span {
+  text-orientation: center;
+  line-height: 80px;
+  font-size: 32px;
+  float: left;
+  vertical-align: center; }
+
+#nav-bar .logo {
+  float: left; }
+
+/*TOGGLE BUTTON IN THE NAV BAR*/
+#composetweetbutton {
+  font-size: 15px;
+  text-align: center;
+  float: right;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #e8fdff;
+  width: 80px;
+  height: auto;
+  margin: 10px;
+  padding: 10px; }
+
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.container {
+  margin: 0 auto;
+  padding-top: 60px;
+  width: 450px;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 140px; }
+
+/*
+ * Global layout stuff
+ */
 body {
-  background: #eeffcc; }
+  margin: 0;
+  color: #244751;
+  background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.new-tweet {
+  border-radius: 10px;
+  background-color: #e8e8e8;
+  padding: 5px;
+  margin: 2em;
+  height: 160px;
+  overflow: auto; }
+
+.new-tweet h2 {
+  border-bottom: thin solid black;
+  text-align: left;
+  margin: 0px 0px 10px 0px;
+  padding: 0px 0px -10px 0px; }
+
+.new-tweet form {
+  overflow: auto; }
+
+.new-tweet textarea {
+  padding: 0.5em;
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: 60px; }
+
+.new-tweet form input {
+  float: left;
+  height: 30px;
+  margin: 15px; }
+
+.new-tweet .counter {
+  float: right;
+  font-size: 12px; }
+
+.new-tweet .submitError {
+  padding: 0px 20px;
+  display: none;
+  color: red;
+  line-height: 1;
+  vertical-align: -110%; }
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+.tweet {
+  border-radius: 10px;
+  background-color: white;
+  margin: 2em;
+  border: 1px solid grey; }
+
+.tweet header {
+  background-color: #e8e8e8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 70px; }
+
+.tweet header * {
+  border: 1px; }
+
+.tweet header img {
+  border-radius: 10px;
+  height: 64px;
+  width: auto;
+  margin: 0.20em;
+  padding: 5px; }
+
+.tweet header h2 {
+  display: inline-block;
+  vertical-align: 180%;
+  margin: 0;
+  font-size: 1.2em; }
+
+.tweet header h3 {
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding-right: 10px;
+  padding-top: 10px; }
+
+.tweet section {
+  min-height: 80px;
+  padding: 10px; }
+
+.tweet footer {
+  border-top: 1px solid #e8e8e8;
+  overflow: auto;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 30px; }
+
+.tweet footer .tweet-imgs {
+  float: right;
+  clear: both; }
+
+.tweet footer .tweet-imgs img {
+  width: 20px;
+  height: 20px;
+  opacity: 0; }
+
+.tweet footer .tweet-imgs img:hover {
+  opacity: 1; }
