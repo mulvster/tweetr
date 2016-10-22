@@ -8,30 +8,29 @@
     background-color: #00a087;
     color: #e8fdff;
     padding: 0 2em;
-}
-
-#nav-bar span {
-    text-orientation: center;
-    line-height: 80px;
-    font-size: 32px;
-    float: left;
-    vertical-align: center;
-}
-
-#nav-bar .logo {
-    float:left;
+    span {
+        text-orientation: center;
+        line-height: 80px;
+        font-size: 32px;
+        float: left;
+        vertical-align: center;
+    }
+    .logo {
+        float: left;
+    }
 }
 
 /*TOGGLE BUTTON IN THE NAV BAR*/
+
 #composetweetbutton {
-     font-size: 15px;
-     text-align: center;
-     float: right;
-     border: 2px solid white;
-     border-radius: 5px;
-     background-color: #e8fdff;
-     width: 80px;
-     height: auto;
-     margin: 10px;
-     padding: 10px;
- }
+    font-size: 15px;
+    text-align: center;
+    float: right;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #e8fdff;
+    width: 80px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}

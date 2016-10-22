@@ -3,67 +3,57 @@
     background-color: white;
     margin: 2em;
     border: 1px solid grey;
-}
-
-.tweet header {
-    background-color: #e8e8e8;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 70px;
-}
-
-.tweet header * {
-    border: 1px;
-}
-
-.tweet header img {
-    border-radius: 10px;
-    height: 64px;
-    width: auto;
-    margin: 0.20em;
-    padding: 5px;
-}
-
-.tweet header h2 {
-    display: inline-block;
-    vertical-align: 180%;
-    margin: 0;
-    font-size: 1.2em;
-
-}
-
-.tweet header h3 {
-    display: inline-block;
-    float: right;
-    margin: 0;
-    padding-right: 10px;
-    padding-top: 10px;
-}
-.tweet section {
-    min-height: 80px;
-    padding: 10px;
-}
-
-.tweet footer {
-    border-top: 1px solid #e8e8e8;
-    overflow: auto;
-    padding: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    height: 30px;
-}
-
-.tweet footer .tweet-imgs {
-    float: right;
-    clear: both;
-}
-
-.tweet footer .tweet-imgs img {
-    width: 20px;
-    height: 20px;
-    opacity: 0;
-}
-
-.tweet footer .tweet-imgs img:hover {
-    opacity: 1;
+    header {
+        background-color: #e8e8e8;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 70px;
+        * {
+            border: 1px;
+        }
+        img {
+            border-radius: 10px;
+            height: 64px;
+            width: auto;
+            margin: 0.20em;
+            padding: 5px;
+        }
+        h2 {
+            display: inline-block;
+            vertical-align: 180%;
+            margin: 0;
+            font-size: 1.2em;
+        }
+        h3 {
+            display: inline-block;
+            float: right;
+            margin: 0;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+    }
+    section {
+        min-height: 80px;
+        padding: 10px;
+    }
+    footer {
+        border-top: 1px solid #e8e8e8;
+        overflow: auto;
+        padding: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 30px;
+        .tweet-imgs {
+            float: right;
+            clear: both;
+            img {
+                width: 20px;
+                height: 20px;
+                opacity: 0;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
