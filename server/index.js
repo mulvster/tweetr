@@ -1,7 +1,7 @@
 "use strict";
 
-const PORT = 8080;
-const MONGODB_URI = "mongodb://127.0.0.1:27017/tweeter";
+const PORT = process.env.PORT || 8080;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 const express = require("express");
 const bodyParser = require("body-parser");

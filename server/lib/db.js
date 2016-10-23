@@ -2,7 +2,7 @@
 
 const MongoClient = require("mongodb").MongoClient;
 const MONGODB_URI = process.env.MONGODB_URI;
-
+console.log(MONGODB_URI);
 var collection;
 
 var methods = {
