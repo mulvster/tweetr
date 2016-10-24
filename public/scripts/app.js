@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 $(function () {
   //
   function renderTweet(tweet) {
@@ -13,11 +13,11 @@ $(function () {
   }
 
   function createTweetElement(tweet) {
-    const fullName = tweet.user.name;
-    const handle = tweet.user.handle;
-    const tweetContent = tweet.content.text;
-    const avatarSrc = tweet.user.avatars.small;
-    const createdAt = tweet.created_at;
+    var fullName = tweet.user.name;
+    var handle = tweet.user.handle;
+    var tweetContent = tweet.content.text;
+    var avatarSrc = tweet.user.avatars.small;
+    var createdAt = tweet.created_at;
 
     var $tweet = $('<article>').addClass('tweet').html(
       `<header>
@@ -44,7 +44,7 @@ $(function () {
 
   $('form').on('submit', function (event) {
     event.preventDefault();
-    let data = $(this).serialize();
+    var data = $(this).serialize();
     $.post('/tweets', data, renderTweet);
   });
 

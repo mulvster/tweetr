@@ -1,10 +1,10 @@
 $(function () {
-  const limitOfCharacters = 140;
-  const warningForCharacterLimit = 'red';
+  var limitOfCharacters = 140;
+  var warningForCharacterLimit = 'red';
 
   function countDown() {
 
-    let amountRemaining = limitOfCharacters - $('.charCountMessage').val().length;
+    var amountRemaining = limitOfCharacters - $('.charCountMessage').val().length;
     if (amountRemaining < 0) {
       $('#tweetingButton').prop('disabled', true);
       $('.counter').css('color', warningForCharacterLimit);
