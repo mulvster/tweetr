@@ -1,4 +1,3 @@
-// require('dotenv').config();
 $(function () {
   //
   function renderTweet(tweet) {
