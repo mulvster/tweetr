@@ -2,6 +2,7 @@ $(function () {
   var limitOfCharacters = 140;
   var warningForCharacterLimit = 'red';
 
+  //function that counts' the letter count.
   function countDown() {
 
     var amountRemaining = limitOfCharacters - $('.charCountMessage').val().length;
@@ -10,9 +11,11 @@ $(function () {
       $('.counter').css('color', warningForCharacterLimit);
       $('.submitError').fadeIn();
     }
-      else if(amountRemaining === 140) {
+    //makes it so submit button is disabled if you haven't written anything.
+    else if (amountRemaining === 140) {
       $('#tweetingButton').prop('disabled', true);
     }
+
     else {
       $('#tweetingButton').prop('disabled', false);
       $('.counter').css('color', 'black');
@@ -23,5 +26,4 @@ $(function () {
 
   countDown();
 
-  $(this).bind("input", countDown);
 })
